@@ -224,7 +224,12 @@
                         </div>
                         <div class="flex items-center space-x-3 text-sm text-gray-700">
                             <i class="fa-solid fa-envelope text-blue-600 text-lg"></i>
-                            <span>info@misu-uganda.com</span>
+                            <a href="mailto:aidrisalove85@gmail.com" class="hover:text-blue-600 transition">aidrisalove85@gmail.com</a>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm text-gray-700">
+                            <i class="fa-brands fa-whatsapp text-emerald-600 text-xl"></i>
+                            <i class="fa-solid fa-phone text-blue-600 text-sm -ml-1"></i>
+                            <a href="https://wa.me/256759815590" target="_blank" class="hover:text-blue-600 transition font-semibold">0759815590</a>
                         </div>
                         <div class="flex items-center space-x-3 text-sm text-gray-700">
                             <i class="fa-solid fa-building text-blue-600 text-lg"></i>
@@ -261,8 +266,9 @@
         <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p>&copy; 2026 Medical Innovations and Supplies Uganda Misu Limited. All rights reserved.</p>
             <div class="space-x-4">
-                <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-300">Terms of Supply</a>
+                <span class="text-gray-400">Support: aidrisalove85@gmail.com</span>
+                <span class="text-gray-400">|</span>
+                <span class="text-gray-400">Call: 0759815590</span>
             </div>
         </div>
     </footer>
@@ -348,7 +354,9 @@
                 let response = "";
                 const query = userText.toLowerCase();
 
-                if (query.includes('misu') || query.includes('company') || query.includes('who are you') || query.includes('what do you do')) {
+                if (query.includes('contact') || query.includes('email') || query.includes('phone') || query.includes('whatsapp') || query.includes('call') || query.includes('reach') || query.includes('where')) {
+                    response = "You can contact MISU Limited directly! Send an email to <strong>aidrisalove85@gmail.com</strong> or call / send a WhatsApp message to our primary phone line: <strong>0759815590</strong>.";
+                } else if (query.includes('misu') || query.includes('company') || query.includes('who are you') || query.includes('what do you do')) {
                     response = "<strong>Medical Innovations & Supplies Uganda Misu Limited (MISU)</strong> is a leading corporate supplier and distributor of medical tech. We specialize in four areas: 1) Precision Surgical Instruments, 2) Advanced Theatre/ICU Systems, 3) Sterile Consumables (including Ticare brand syringes), and 4) General Ward Diagnostics. We source CE-certified logistics globally for the Ugandan healthcare system.";
                 } else if (query.includes('syringe') || query.includes('ticare') || query.includes('consumable')) {
                     response = "MISU Limited is an authorized provider of premium sterile consumables, prominently featuring <strong>Ticare Disposable Syringes with Needles (5ml)</strong>. They are non-toxic, non-pyrogenic, centric single-use solutions packed cleanly in boxes of 100 pieces.";
@@ -358,11 +366,8 @@
                     response = "MISU sets up entire intensive hospital platforms! Our <strong>Advanced Theatre Systems</strong> line supplies heavy setup gear like shadowless overhead surgical lamps, fully multi-adjustable theater tables, and anesthesia delivery parameters.";
                 } else if (query.includes('diagnostic') || query.includes('bed') || query.includes('wheelchair') || query.includes('blood pressure')) {
                     response = "For general ward care, we supply premium <strong>Ward Diagnostics & Infrastructure Accessories</strong>. This includes digital blood pressure loops, diagnostic vital units, clinical thermometers, adjustable recovery beds, and mobility wheelchairs.";
-                } else if (query.includes('contact') || query.includes('email') || query.includes('location') || query.includes('where')) {
-                    response = "You can interact with MISU Limited directly! We are located in Kampala, Uganda. Our corporate mail infrastructure is open at <strong>info@misu-uganda.com</strong>, or you can submit an item request directly on our webpage contact grid!";
                 } else {
-                    // Global Knowledge fallback response demonstrating global intelligence
-                    response = `As an omni-intelligent agent, I am familiar with your query regarding "${userText}". Processing worldwide parameters... How does this match your healthcare logistics or medical framework targets at MISU Uganda? Let me know if you would like me to frame a quote request for you!`;
+                    response = `As an omni-intelligent agent, I am familiar with your query regarding "${userText}". Processing worldwide parameters... To coordinate with MISU Uganda directly regarding this or any other custom medical setup, reach out at <strong>aidrisalove85@gmail.com</strong> or WhatsApp <strong>0759815590</strong>!`;
                 }
 
                 // Render Aidrisa Response Bubble
